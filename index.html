@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Yuva Bharat AI — Smart Career Guidance</title>
+  <meta name="description" content="Yuva Bharat AI helps students discover career paths using a simple smart quiz and roadmap." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="container">
+      <h1 class="brand">Yuva Bharat <span>AI</span></h1>
+      <p class="tag">Smart Career Guidance for Every Student</p>
+      <nav class="cta-row">
+        <a class="btn primary" href="#quiz">Try Demo Quiz</a>
+        <a class="btn" href="#waitlist">Join Waitlist</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container intro">
+      <h2>Problem we solve</h2>
+      <p>Many students feel confused about career choices. Parents often suggest paths that don't match a child's strengths or interests. Yuva Bharat AI gives simple, personalised guidance so every student can choose the right direction.</p>
+    </section>
+
+    <section class="container how">
+      <h2>How it works</h2>
+      <ol class="steps">
+        <li><strong>Simple Quiz:</strong> Short questions about interests & strengths.</li>
+        <li><strong>Smart Match:</strong> Lightweight algorithm maps answers to career streams.</li>
+        <li><strong>Roadmap:</strong> Steps, skills & exams to reach the chosen path.</li>
+      </ol>
+    </section>
+
+    <section id="quiz" class="container quiz">
+      <h2>Demo: Smart Career Quiz</h2>
+      <p class="small">Answer quick questions — our demo suggests 1 or 2 paths.</p>
+
+      <div id="quiz-area" class="card">
+        <div id="q-step" class="q-step">Question 1 of 4</div>
+        <div id="q-text" class="q-text"></div>
+        <div id="q-options" class="options"></div>
+
+        <div class="quiz-footer">
+          <button id="prev-btn" class="btn small">Previous</button>
+          <button id="next-btn" class="btn small primary">Next</button>
+        </div>
+      </div>
+
+      <div id="result" class="card hidden">
+        <h3>Suggested Career Path</h3>
+        <p id="result-text"></p>
+        <div id="roadmap"></div>
+        <button id="restart" class="btn">Try Again</button>
+      </div>
+    </section>
+
+    <section class="container features">
+      <h2>Features (Demo)</h2>
+      <ul>
+        <li>Personalized career match (quiz-based)</li>
+        <li>Study roadmap for each career</li>
+        <li>Focus on accessibility for rural & urban students</li>
+        <li>Lightweight design — works on phones</li>
+      </ul>
+    </section>
+
+    <section id="waitlist" class="container waitlist">
+      <h2>Join Early Users</h2>
+      <p>Enter your name & email. We'll contact early testers.</p>
+
+      <form id="wait-form" class="form">
+        <input id="w-name" type="text" placeholder="Your name" required />
+        <input id="w-email" type="email" placeholder="Email address" required />
+        <textarea id="w-note" placeholder="School / Class (optional)"></textarea>
+        <div class="form-actions">
+          <button type="submit" class="btn primary">Submit</button>
+          <button id="mailto-btn" type="button" class="btn">Submit via Email</button>
+        </div>
+        <p class="small">Note: This static demo stores data locally; email option opens your mail app.</p>
+      </form>
+
+      <div id="wait-msg" class="small hidden"></div>
+    </section>
+
+    <section class="container footer-card">
+      <h2>Vision</h2>
+      <p>Our mission is to make career guidance accessible to every student in India using simple AI tools and clear roadmaps.</p>
+      <p class="muted">By <strong>Your Name Here</strong> — Yuva Bharat AI (School Project)</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container tiny">
+      <small>© Yuva Bharat AI — Demo • For school project submission</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
